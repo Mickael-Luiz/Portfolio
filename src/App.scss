@@ -1,26 +1,4 @@
 .App {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, #111, #333);
-}
-
-.containerHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25%;
-}
-
-.containerMain {
-  display: flex;
-  height: 70%;
-  align-items: center;
-  justify-content: center;
-  animation: showMain 5s ease 0ms 1 forwards;
-}
-
-@keyframes showMain {
-  0% { opacity: 0 }
-  95% { opacity: 0 }
-  100% { opacity: 1 }
 }

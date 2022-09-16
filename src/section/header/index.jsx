@@ -1,24 +1,23 @@
+import fundoHeader from '../../assets/fundo-header.jpg'
+import iconePython from '../../assets/logo-python.png'
+import iconeReact from '../../assets/logo-react.png'
+
 import './index.scss'
 
 export default function Header() {
 
-    return (
-        <div className="apresentacao">
-            <titulo className="titulo">
-                <h1>B</h1>
-                <h1>e</h1>
-                <h1>m</h1>
-                <h1>-</h1>
-                <h1>v</h1>
-                <h1>i</h1>
-                <h1>n</h1>
-                <h1>d</h1>
-                <h1>o</h1>
-                <h1 className='indicadorDigito'>_</h1>
-            </titulo>
-            {/* <nome className="nome">
-                <h2>Mickael Luiz Dias</h2>
-            </nome> */}
-        </div>
-    )
+	return (
+		<div className='header'>
+			<img src={fundoHeader} alt='' className='imgFundo' />
+			<div className='apresentacao'>
+				<h1>Mickael Luiz Dias</h1>
+				<div className='desenv'>
+					<img src={iconePython} alt='' />
+					<h2>Desenvolvedor</h2>
+					<img src={iconeReact} alt='' />
+				</div>
+				<h3>Análise e Desenvolvimento de Sistemas</h3>
+			</div>
+		</div>
+	)
 }

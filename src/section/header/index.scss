@@ -1,80 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+.header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.imgFundo {
+  width: 100%;
+}
 
 .apresentacao {
-    color: #00ff00;
-    font-family: 'Aboreto', cursive;
-    font-size: 2.5em;
+  position: absolute;
+  height: 20vw;
+  width: 35%;
+  color: #fff;
+  right: 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .desenv {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
-.titulo {
-    display: flex;
-}
+    h2 {
+      font-size: 3vw;
+      margin: 0 2vw;
+    }
 
-.titulo h1 {
-    text-align: center;
-    width: 36px;
-    opacity: 0;
-    text-shadow: 3px 3px 3px #00ff00;
-}
+    img {
+      height: 3vw;
+      animation: icones 5s linear 0ms infinite forwards;
+    }
 
-.titulo h1:nth-child(1) { animation: i1 1100ms ease 0ms 1 forwards }
-.titulo h1:nth-child(2) { animation: i2 1260ms ease 0ms 1 forwards }
-.titulo h1:nth-child(3) { animation: i3 1420ms ease 0ms 1 forwards }
-.titulo h1:nth-child(4) { animation: i4 1580ms ease 0ms 1 forwards }
-.titulo h1:nth-child(5) { animation: i5 1740ms ease 0ms 1 forwards }
-.titulo h1:nth-child(6) { animation: i6 1900ms ease 0ms 1 forwards }
-.titulo h1:nth-child(7) { animation: i7 2060ms ease 0ms 1 forwards }
-.titulo h1:nth-child(8) { animation: i8 2220ms ease 0ms 1 forwards }
-.titulo h1:nth-child(9) { animation: i9 2380ms ease 0ms 1 forwards }
+    @keyframes icones {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
-@keyframes i1 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i2 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i3 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i4 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i5 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i6 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i7 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i8 { 99% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes i9 { 99% { opacity: 0 } 100% { opacity: 1 } }
+  }
 
-.titulo .indicadorDigito:last-child {
-    opacity: 0;
-    font-weight: bold;
-    animation-name: indicador;
-    animation-duration: 3.5s;
-    animation-timing-function: steps(9);
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+  h3 {
+    font-size: 2vw;
+  }
 
-@keyframes indicador {
-    0% { transform: translateX( - 324px); opacity: 1 }
-    40% { transform: translateX(0px); opacity: 1 }
-    50% { opacity: 1 }
-    60% { opacity: 0 }
-    70% { opacity: 1 }
-    80% { opacity: 0 }
-    90% { opacity: 1 }
-    100% { display: none }
-}
 
-.nome {
-    display: inline-block;
-    opacity: 0;
-    animation: showName 5s ease-out 0ms 1 forwards;
-    margin-top: 15px;
-}
 
-.nome h2 {
-    font-size: 0.5em;
-    text-shadow: 2px 2px 2px #00ff00;
-}
-
-@keyframes showName {
-    95% { opacity: 0 }
-    100% { opacity: 1 }
 }

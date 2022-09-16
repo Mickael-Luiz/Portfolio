@@ -1,19 +1,12 @@
 import Header from './section/header'
-import './App.scss'
-import Main from './section/mains'
+import Body from './section/body'
 
 function App() {
 
   return (
-    <div className="App">
-      <div className='containerHeader'>
-        <Header />
-      </div>
-      <div className='containerMain'>
-        <Main/>
-      </div>
-      <div className='containerFooter'>
-      </div>
+    <div className='App'>
+      <Header />
+      <Body />
     </div>
   )
 }
