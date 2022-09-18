@@ -1,0 +1,13 @@
+.footer {
+  height: 40px;
+  background-color: rgb(6, 70, 153);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  p {   
+    font-style: italic;
+    font-weight: bold;
+  }
+}

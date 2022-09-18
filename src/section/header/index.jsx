@@ -12,9 +12,9 @@ export default function Header() {
 			<div className='apresentacao'>
 				<h1>Mickael Luiz Dias</h1>
 				<div className='desenv'>
-					<img src={iconePython} alt='' />
-					<h2>Desenvolvedor</h2>
 					<img src={iconeReact} alt='' />
+					<h2>Desenvolvedor</h2>
+					<img src={iconePython} alt='' />
 				</div>
 				<h3>Análise e Desenvolvimento de Sistemas</h3>
 			</div>
