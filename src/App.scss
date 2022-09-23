@@ -7,7 +7,7 @@
 .lineEffect {
  height: 5px;
  width: 0;
- background: linear-gradient(90deg, #0dd7e6, #ffffff);
+ background: linear-gradient(90deg, var(--azul), #ffffff);
  margin: 15px 0;
  animation: linhaDeEfeito 10s linear 0ms infinite;
 }
@@ -16,27 +16,33 @@
   0% {
     width: 0;
   }
-  4% {
-    align-self: flex-start;
-  }
   5% {
-    align-self: flex-end;
+    align-self: flex-start;
     width: 100%;
   }
-  10% {
-    width: 0;
+  6% {
+    align-self: flex-end;
   }
-  17% {
+  7% {
+    width: 100%;
+  }
+  12% {
     width: 0;
   }
   19% {
-    align-self: flex-end;
+    width: 0;
   }
-  20% {
+  24% {
+    align-self: flex-end;
     width: 100%;
+  }
+  25% {
     align-self: flex-start;
   }
-  27% {
+  26% {
+    width: 100%;
+  }
+  31% {
     width: 0;
   }
 

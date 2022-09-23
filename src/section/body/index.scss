@@ -66,6 +66,18 @@
   padding-bottom: 2vw;
 }
 
+.p-dialog .p-dialog-content:last-of-type {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  // display: flex;
+  width: 50vw; 
+
+  button {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
 button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -74,54 +86,13 @@ button {
   max-height: 35px;
   width: 23vw;
   max-width: 170px;
-  background: linear-gradient(45deg, #0747a8 25%, #646262);
+  background: linear-gradient(45deg, var(--azul) 25%, #646262);
   color: #fff;
   border-radius: 8px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-
-//Linhas De Efeitos
-.effects {
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0;
-}
-
-.lineEffect {
- height: 5px;
- width: 0;
- background: linear-gradient(90deg, #0dd7e6, #ffffff);
- margin: 15px 0;
- animation: linhaDeEfeito 10s linear 0ms infinite;
-}
-
-@keyframes linhaDeEfeito {
-  0% {
-    width: 0;
-  }
-  4% {
-    align-self: flex-start;
-  }
-  5% {
-    align-self: flex-end;
-    width: 100%;
-  }
-  10% {
-    width: 0;
-  }
-  17% {
-    width: 0;
-  }
-  19% {
-    align-self: flex-end;
-  }
-  20% {
-    width: 100%;
-    align-self: flex-start;
-  }
-  27% {
-    width: 0;
-  }
-
+*::-webkit-scrollbar {
+  width: 0px;
 }
