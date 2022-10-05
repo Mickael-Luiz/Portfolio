@@ -1,17 +1,41 @@
 .containerPerfil {
   display: flex;
   width: 100%;
+  height: calc(10vw + 20px);
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .fotoPerfil {
   height: 10vw;
   border-radius: 50%;
   cursor: pointer;
+  transition: 500ms;
+}
+
+.fotoPerfil:hover {
+  height: calc(10vw + 20px);
+  // position: absolute;
+}
+
+.card{
+  position: relative;
+  height: 4vw;
+  width: 4.5vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
   cursor: pointer;
-  height: 4vw;
+  position: absolute;
+  width: 4.5vw;
+}
+
+.card:hover {
+  .logo{
+    transform: rotateY(360deg);
+    transition: all .9s;
+  }
 }

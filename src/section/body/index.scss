@@ -1,14 +1,15 @@
 .containerBody {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 3%;
-  grid-template-areas:
-    'sobreMim sobreMim .'
-    '. cursos cursos'
-    'estudos estudos .'
-  ;
+
+}
+
+.containerConteudo {
+  margin: 10px 0;
+  width: 100%;
 }
 
 .perfil {
@@ -20,19 +21,16 @@
 .sobreMim {
   color: #ffffff;
   font-size: 2vw;
-  grid-area: sobreMim;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .cursos {
   color: #ffffff;
   font-size: 2vw;
-  grid-area: cursos;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin: 50px 0;
 
   .imgCertificados {
     order: +1;
@@ -42,9 +40,7 @@
 .estudos {
   color: #ffffff;
   font-size: 2vw;
-  grid-area: estudos;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 

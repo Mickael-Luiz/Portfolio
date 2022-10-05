@@ -36,7 +36,7 @@ export default function Body() {
 
 
       {/* Paragrafo sobre mim*/}
-      <div className='sobreMim'>
+      <div className='containerConteudo sobreMim'>
         <img src={imgSobreMim} alt='Imagem Sobre Mim' className='imgConteudo imgSobreMim' />
         <div className='conteudo'>
           <p className='paragrafo'>
@@ -54,7 +54,7 @@ export default function Body() {
 
 
       {/* Paragrafo Cursos */}
-      <div className='cursos'>
+      <div className='containerConteudo cursos'>
         <img src={imgCertificado} alt='imagemCertificado' className='imgConteudo imgCertificados' />
         <div className='conteudo'>
           <p className='paragrafo'>
@@ -68,7 +68,7 @@ export default function Body() {
       </Dialog>
 
       {/* Paragrafo portfolio*/}
-      <div className='estudos'>
+      <div className='containerConteudo estudos'>
         <img src={imgPortfolio} alt='Imagem Portfolio' className='imgConteudo imgPortfolio' />
         <div className='conteudo'>
           <p className='paragrafo'>
