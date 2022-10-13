@@ -23,7 +23,7 @@ export default function Perfil() {
 
       <div className='card' >
         <a href='https://www.linkedin.com/in/mickael-dias-787799169/' target='_blank' rel='noopener noreferrer'>
-          <img src={logoLinkedin} alt='Logo do Instagram' style={{ height: '5vw' }} className='logo' />
+          <img src={logoLinkedin} alt='Logo do Instagram' className='logo' />
         </a>
       </div>
 

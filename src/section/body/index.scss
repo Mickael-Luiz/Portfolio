@@ -9,7 +9,10 @@
 
 .containerConteudo {
   margin: 10px 0;
-  width: 100%;
+  width: 70%;
+  border: 1px solid var(--azul);
+  padding: 10px;
+  box-shadow: -6px 7px 4px #019bc2;
 }
 
 .perfil {

@@ -54,7 +54,7 @@ export default function Body() {
 
 
       {/* Paragrafo Cursos */}
-      <div className='containerConteudo cursos'>
+      <div className='containerConteudo cursos' style={{ boxShadow: "6px 7px 4px #019bc2" }}>
         <img src={imgCertificado} alt='imagemCertificado' className='imgConteudo imgCertificados' />
         <div className='conteudo'>
           <p className='paragrafo'>

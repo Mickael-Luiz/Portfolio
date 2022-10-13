@@ -1,4 +1,6 @@
 import fundoHeader from '../../assets/fundo-header.jpg'
+import preto from '../../assets/preto.gif'
+import transparente from '../../assets/transparente.gif'
 import iconePython from '../../assets/logo-python.png'
 import iconeReact from '../../assets/logo-react.png'
 
@@ -8,7 +10,7 @@ export default function Header() {
 
 	return (
 		<div className={style.header}>
-			<img src={fundoHeader} alt='' className={style.imgFundo} />
+			<img src={preto} alt='' className={style.imgFundo} />
 			<div className={style.apresentacao}>
 				<h1>Mickael Luiz Dias</h1>
 				<div className={style.desenv}>
