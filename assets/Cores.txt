@@ -1,0 +1,3 @@
+linear-gradient(90deg, #00968f, #00fff4)
+#002d2b
+rgb(3, 38, 43)
