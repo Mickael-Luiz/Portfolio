@@ -1,3 +1,6 @@
+body {
+  max-width: 100vw;
+}
 /* Barra de Nagevação */
 
 .navBar {
@@ -11,7 +14,8 @@
 
 .limit {
   height: 100%;
-  width: 50%;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +30,7 @@
   height: 100%;
   display: flex;
   gap: 20px;
-  font-size: large;
+  font-size: medium;
 }
 
 .limit ul li {
@@ -34,15 +38,70 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  color: white;
 }
 .limit ul li:hover {
-  color: rgb(10, 196, 224);
+  color: #28c3df;
   cursor: pointer;
 }
 
 
-/* Home */
+/* Init */
 
-.home {
+.init {
   width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #111 60%, #03262b);
 }
+
+.apresentation {
+  padding: 80px 0;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  color: white;
+  justify-content: space-between;
+  position: relative;
+}
+
+.textApresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+}
+
+.textApresentation label {
+  flex-wrap: wrap;
+}
+
+.textApresentation h2 {
+  color: #1790a5;
+  font-weight: bold;
+}
+
+.textApresentation h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.textApresentation > h1 > span {
+  color: #28c3df;
+}
+
+.textApresentation h3 {
+  font-weight: 100;
+  font-size: small;
+  line-height: 23px;
+}
+
+.apresentation img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(200px);
+}
+
