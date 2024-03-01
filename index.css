@@ -1,15 +1,15 @@
-body {
-  max-width: 100vw;
-}
-/* Barra de Nagevação */
-
+/* NavBar */
 .navBar {
   height: 60px;
   width: 100%;
+  /* background-color: rgba( 0, 0, 0, 0.4); */
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 5px 5px rgba( 50, 50, 50, .2);
+  /* box-shadow: 0px 5px 5px rgba( 50, 50, 50, 1); */
+  position: fixed;
+  z-index: 999;
 }
 
 .limit {
@@ -19,9 +19,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-.limit img {
+.limit .logo {
   width: 50px;
   height: 40px;
 }
@@ -39,7 +40,6 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: white;
 }
 .limit ul li:hover {
   color: #28c3df;
@@ -48,23 +48,19 @@ body {
 
 
 /* Init */
-
 .init {
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(90deg, #111 60%, #03262b);
+	padding-top: 60px;
 }
 
 .apresentation {
-  padding: 80px 0;
   display: flex;
   width: 100%;
-  max-width: 900px;
-  color: white;
   justify-content: space-between;
-  position: relative;
 }
 
 .textApresentation {
@@ -82,26 +78,95 @@ body {
 .textApresentation h2 {
   color: #1790a5;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .textApresentation h1 {
   font-size: 2.5em;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .textApresentation > h1 > span {
   color: #28c3df;
 }
 
-.textApresentation h3 {
+.textApresentation p {
   font-weight: 100;
   font-size: small;
   line-height: 23px;
 }
 
-.apresentation img {
+.apresentation .perfil {
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   transform: translateX(200px);
 }
 
+
+/* Goals */
+.goals {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 60px 0;
+}
+
+.descriptionGoals {
+  display: flex;
+  gap: 20px;
+}
+
+.textGoals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 350px;
+  /* text-align: justify; */
+}
+
+.textGoals h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.textGoals > h2 > span {
+  color: #28c3df;
+}
+.textGoals p {
+  font-size: 0.8em;
+  line-height: 23px;
+}
+
+.tools {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.tools > .tool:nth-child(2), .tools > .tool:nth-child(3) {
+  background-image: linear-gradient(360deg, #03262b, black);
+}
+.tool:nth-child(even) {
+  transform: translateY(25px);
+}
+
+.tool {
+  background-color: #111;
+  color: #28c3df;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
