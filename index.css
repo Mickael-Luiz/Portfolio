@@ -15,7 +15,7 @@
 .limit {
   height: 100%;
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
